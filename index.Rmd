@@ -1,0 +1,36 @@
+---
+title: '14 August 2019'
+---
+
+#### Please click on the individual markers for more information.
+
+You might need to wait a little for images to load in the popups.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo=FALSE}
+library(leaflet)
+
+tajmahalIcon <- makeIcon(iconUrl="https://www.svgrepo.com/show/237660/taj-mahal-india.svg",
+                        iconWidth=45*512/512, iconHeight=45, iconAnchorX=31*215/230/2, iconAnchorY=16)
+
+jogfallsIcon <- makeIcon(iconUrl="https://www.svgrepo.com/show/246275/waterfall-river.svg",
+                        iconWidth=45*512/512, iconHeight=45, iconAnchorX=31*215/230/2, iconAnchorY=16)
+
+
+
+tajmahalPopup <- "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/728px-Taj_Mahal_in_March_2004.jpg' height=1500px, width=1200px><b>Taj Mahal</b><br/>One of the 8th Wonders of World"
+
+jogfallsPopup <- "<img src='https://www.karnataka.com/wp-content/uploads/2009/07/xjog-falls-01.jpg.pagespeed.ic.uFneTCzB3i.jpg'><b>Jog Falls</b><br/>India's 2nd highest plunge waterfall"
+
+
+
+my_map <- leaflet() %>%
+        addTiles() %>%
+        addMarkers(lat=27.1751, lng=78.0421, icon=tajmahalIcon, popup=tajmahalPopup) %>%
+        addMarkers(lat=14.2304, lng=74.8122, icon=jogfallsIcon, popup=jogfallsPopup)
+
+my_map
+```
