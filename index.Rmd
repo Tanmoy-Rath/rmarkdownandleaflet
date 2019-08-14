@@ -2,9 +2,17 @@
 title: '14 August 2019'
 ---
 
-#### Please click on the individual markers for more information.
+### Developing Data Products project-1 : R Markdown & Leaflet
 
-You might need to wait a little for images to load in the popups.
+#### A leaflet map of India, showing
+* <b>Taj Mahal</b>
+* <b>Jog Falls</b>
+
+<br/>
+
+##### Please click on the individual markers for more information.
+
+##### You might need to wait a little for the images to load in the popups.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
