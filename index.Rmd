@@ -4,7 +4,7 @@ title: '14 August 2019'
 
 ### Developing Data Products project-1 : R Markdown & Leaflet
 
-#### A leaflet map of India, showing
+#### A leaflet map of India (_created with R Markdown_), showing:
 * <b>Taj Mahal</b>
 * <b>Jog Falls</b>
 
